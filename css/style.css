@@ -145,3 +145,69 @@ ol {
 .active {
   background-color: #717171;
 }
+
+/*--Food section--*/
+.food-items {
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+}
+
+/* why it is two times*/
+.food-items .food-item {
+  height: 600px;
+  margin-right: -15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.food-items .food-item:hover .food-text {
+  bottom: 135px;
+}
+
+.food-items .food-item:hover .food-text h2 {
+  margin-bottom: 30px;
+}
+
+.food-items .food-item .food-text {
+  position: absolute;
+  left: 45px;
+  right: 25px;
+  bottom: -250px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.food-items .food-item .food-text h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.food-items .food-item .food-text h2 {
+  color: #dfa974;
+  font-weight: 700;
+  margin-bottom: 50px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.food-items .food-item .food-text h2 span {
+  font-family: "Cabin", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.food-items .food-item .food-text table {
+  margin-bottom: 30px;
+}
+.food-items .food-item .food-text table tbody tr td {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 36px;
+}
+.food-items .food-item .food-text table tbody tr td.r-o {
+  width: 120px;
+}
+.food-items .food-item .food-text .primary-btn:after {
+  background: #ffffff;
+}
