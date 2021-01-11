@@ -48,3 +48,16 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+/*Review section*/
+(function ($) {
+  $(".review-slider").owlCarousel({
+    items: 1,
+    dots: false,
+    autoplay: true,
+    loop: true,
+    smartSpeed: 1200,
+    nav: true,
+    navText: ["<i class='arrow_left'></i>", "<i class='arrow_right'></i>"],
+  });
+})(jQuery);

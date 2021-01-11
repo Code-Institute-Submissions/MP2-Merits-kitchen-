@@ -24,7 +24,7 @@ h6 {
   font-family: Lora, sans-serif;
 }
 h1 {
-  font-size: 70px;
+  font-size: 55px;
 }
 h2 {
   font-size: 36px;
@@ -67,28 +67,32 @@ ol {
 .menu-item {
   position: relative;
 }
-.menu-item .logo {
+.logo {
   padding: 25px 0;
 }
-.menu-item .nav-menu {
+.nav-menu {
   text-align: right;
 }
-.menu-item .nav-menu .mainmenu {
+.mainmenu {
   display: inline-block;
 }
-.menu-item .nav-menu .mainmenu li {
+.mainmenu li {
   list-style: none;
   display: inline-block;
   position: relative;
 }
-.menu-item .nav-menu .mainmenu li.active a:after {
+
+.mainmenu h1 {
+  font-size: 80px;
+}
+.mainmenu li.active a:after {
   opacity: 1;
 }
-.menu-item .nav-menu .mainmenu li:hover > a:after {
+.mainmenu li:hover > a:after {
   opacity: 1;
 }
 
-.menu-item .nav-menu .mainmenu li a {
+.mainmenu li a {
   font-size: 20px;
   color: #19191a;
   margin-right: 42px;
@@ -97,7 +101,7 @@ ol {
   position: relative;
 }
 
-.menu-item .nav-menu .mainmenu li a:after {
+.mainmenu li a:after {
   position: absolute;
   left: 0;
   top: 52px;
@@ -181,9 +185,10 @@ ol {
 }
 
 /*--------------------------------------Order button*/
-
+.btn {
+}
 .position {
-  margin-right: -250%;
+  margin-right: -350%;
   margin-bottom: 50px;
 }
 
