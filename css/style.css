@@ -180,3 +180,9 @@ ol {
   margin-bottom: 50px;
   transition: all 0.2s;
 }
+
+/*--------------------------------------Order button*/
+
+.position {
+  margin-right: -250%;
+}
