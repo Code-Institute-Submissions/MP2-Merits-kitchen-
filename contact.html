@@ -20,6 +20,14 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Merits kitchen</title>
+    <!--Example taken from Rosie project-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            emailjs.init("user_xoaoYC0YJb6E2mdWcHKT2")
+    </script>
+
   </head>
   <body>
       <!--Header section-->
@@ -83,7 +91,7 @@
           </div>
         </div>
         <div class="col-lg-7 offset-lg-1">
-          <form action="#" class="contact-form">
+          <form action="#" id="contact-form">
             <div class="row">
               <div class="col-lg-6">
                 <input type="text" placeholder="Your Name" />
@@ -93,7 +101,7 @@
               </div>
               <div class="col-lg-12">
                 <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
+                <button id="sendMessage" type="submit">Send Message</button>
               </div>
             </div>
           </form>
@@ -153,5 +161,6 @@
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSxnsM85cAfOUX36Tn1jFnQzrM83DwlHw&callback=initMap"></script>
     <script src ="js/maps.js"></script>
+    <script src ="js/email.js"></script>
   </body>
 </html>
