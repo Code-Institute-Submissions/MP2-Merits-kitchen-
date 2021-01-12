@@ -476,3 +476,51 @@ span.price {
     margin-bottom: 20px;
   }
 }
+
+/*--------------------------------------Contact form*/
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.contact-text h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.contact-text p {
+  color: #707079;
+}
+.contact-text table tbody tr td {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.contact-text table tbody tr td.c-o {
+  color: #707079;
+  width: 75px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding-left: 10px;
+  padding-top: 12px;
+}
+
+.contact-form button {
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  background: #dfa974;
+  border: none;
+  padding: 14px 34px 13px;
+  display: inline-block;
+}
+.map {
+  height: 470px;
+  -webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+  margin-top: 75px;
+}
+.map iframe {
+  width: 100%;
+}
