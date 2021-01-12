@@ -499,14 +499,14 @@ span.price {
   width: 75px;
 }
 
-.contact-form textarea {
+#contact-form textarea {
   width: 100%;
   border: 1px solid #e1e1e1;
   padding-left: 10px;
   padding-top: 12px;
 }
 
-.contact-form button {
+#contact-form button {
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 2px;
