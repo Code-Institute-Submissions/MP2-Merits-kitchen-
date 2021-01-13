@@ -23,7 +23,8 @@ Website consists of 3 sections:
 Wireframes are available here:
 
 ![How it works](wireframes/w-1.png)
-![Order from menu](wireframes/w-2.png) \![Contact me](wireframes/w-4.png)
+![Order from menu](wireframes/w-2.png)
+![Contact me](wireframes/w-4.png)
 ![Mobile](wireframes/w-5.png)
 
 ## Features
