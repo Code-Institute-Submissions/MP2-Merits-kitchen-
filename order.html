@@ -19,6 +19,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+    <script>paypal.Buttons().render('body');</script>
     <title>Merits kitchen</title>
   </head>
   <body>
@@ -143,52 +145,36 @@
       </section>
 
       <!--Checkout form, snippet taken from w3schools.com-->
-      <div class="row-checkout">
-        <div class="col-75">
-          <div class="container-checkout">
-            <form action="/action_page.php">
-      
-              <div class="row-checkout">
-                <div class="col-50">
-                  <h3>Billing Address</h3>
-                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                  <input type="text" id="email" name="email" placeholder="john@example.com">
-                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                  
-      
-                <div class="col-50">
-                  <h3>Payment</h3>
-                  <div class="icon-container">
-                    <i class="fab fa-cc-paypal" style="color:navy;"></i>
-                  </div>
-                  
-              </div>
-              
-              <input type="submit" value="Continue to checkout" class="btn-checkout">
-            </form>
-          </div>
+      <div class="container">
+        <div class="row-checkout">
+            <div class="col-lg-6">
+                <form class="checkout-form" action="/action_page.php">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    <input type="submit" value="Continue to checkout" class="btn-checkout">
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h3>Cart
+                <span class="price" style="color:black">
+                    <i class="fa fa-shopping-cart"></i>
+                    <b>4</b>
+                </span>
+                </h3>
+                <p><a href="#">Product 1</a> <span class="price">DKK 15</span></p>
+                <p><a href="#">Product 2</a> <span class="price">DKK 5</span></p>
+                <p><a href="#">Product 3</a> <span class="price">DKK 8</span></p>
+                <p><a href="#">Product 4</a> <span class="price">DKK 2</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>DKK 30</b></span></p>
+            </div>
         </div>
-      
-        <div class="col-25">
-          <div class="container-checkout">
-            <h4>Cart
-              <span class="price" style="color:black">
-                <i class="fa fa-shopping-cart"></i>
-                <b>4</b>
-              </span>
-            </h4>
-            <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-            <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-            <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-            <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-            <hr>
-            <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-          </div>
-        </div>
-      </div>
+    </div>
 
     <!--Footer section-->
     <footer class="footer-section">
