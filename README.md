@@ -14,11 +14,13 @@ The website has been made ...
 
 As a custumer I want to see dishes and prices what Merit offers.
 
-Website consists of 3 sections:
+Website consists of 4 sections:
 
-- **How it works**
-- **Order from menu**
-- **Contact me**
+- **Landing page**
+
+* **How it works**
+* **Order from menu**
+* **Contact me**
 
 Wireframes are available here:
 
