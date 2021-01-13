@@ -1,5 +1,7 @@
 "use strict";
 
+console.log("Hello!");
+
 var slideIndex = 0;
 showSlides();
 

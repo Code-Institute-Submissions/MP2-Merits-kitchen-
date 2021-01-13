@@ -23,3 +23,34 @@ function initMap() {
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
   });
 }
+
+console.log("hello!");
+
+(function ($) {
+  $(window).on("load", function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(200).fadeOut("slow");
+  });
+
+  $(".set-bg").each(function () {
+    var bg = $(this).data("setbg");
+    $(this).css("background-image", "url(" + bg + ")");
+  });
+
+  $(".hero-slider").owlCarousel({
+    loop: true,
+    margin: 0,
+    items: 1,
+    dots: true,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    smartSpeed: 1200,
+    autoHeight: false,
+    autoplay: true,
+    mouseDrag: false,
+  });
+})(jQuery);
+
+$(function () {
+  $("#accordion").accordion();
+});
