@@ -24,8 +24,6 @@ function initMap() {
   });
 }
 
-console.log("hello!");
-
 (function ($) {
   $(window).on("load", function () {
     $(".loader").fadeOut();
@@ -37,7 +35,7 @@ console.log("hello!");
     $(this).css("background-image", "url(" + bg + ")");
   });
 
-  $(".hero-slider").owlCarousel({
+  $(".food-slider").owlCarousel({
     loop: true,
     margin: 0,
     items: 1,
@@ -48,6 +46,15 @@ console.log("hello!");
     autoHeight: false,
     autoplay: true,
     mouseDrag: false,
+  });
+  $(".review-slider").owlCarousel({
+    items: 1,
+    dots: false,
+    autoplay: true,
+    loop: true,
+    smartSpeed: 1200,
+    nav: true,
+    navText: ["<i class='arrow_left'></i>", "<i class='arrow_right'></i>"],
   });
 })(jQuery);
 
