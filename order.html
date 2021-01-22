@@ -260,17 +260,16 @@
       </div>
     </div>
   
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery-ui.min.js"></script>
-      <script scr="js/main.js"></script>
-      <script src="js/maps.js"></script>
-      <script>
-        function OpenModal() {
-          $("#myModal").modal('show');
-        }
-      </script>
-   
-    <script scr="js/maps.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script scr="js/main.js"></script>
+    <script src="js/maps.js"></script>
+    <script>
+        $(document).ready(function () {
+          DisplayProducts();
+          DisplayCartProducts();
+        });
+    </script>
   </body>
 </html>
