@@ -53,7 +53,7 @@ var Products = [
 
 var CartsProducts = [];
 var CartProductsCount = 0;
-var TotalCartAmount =0;
+var TotalCartAmount = 0;
 
 function DisplayProducts() {
     var ProductsDiv = document.getElementById("products");
@@ -62,7 +62,7 @@ function DisplayProducts() {
         ProductsDiv.innerHTML += `
         <div class = "col-lg-4 col-md-6" id= "`+Products[i].id+`">
             <div class="food-menu set-bg">
-                <img src="`Products[i].image+`" alt="Food image"/>
+                <img src="`+Products[i].image+`" alt="Food image"/>
                 <div class="food-text">
                     <h3>`+Products[i].name+`</h3>
                     <h2>`+Products[i].price+`</h2>
@@ -74,4 +74,4 @@ function DisplayProducts() {
     }
 }
 
-
+function AddToCart
