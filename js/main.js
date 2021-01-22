@@ -74,4 +74,15 @@ function DisplayProducts() {
     }
 }
 
-function AddToCart
+function AddToCart(ItemId) {
+    debugger;
+    var Product = Products.find(x=> x.id === ItemId);
+    CartsProducts.push(Product);
+    TotalCartAmount += Number(Product.price.split('')[1]);
+    if(CartsProducts.length > 0) {
+        CartProductsCount = CartsProducts.length;
+    }
+    DisplayCartProducts();
+}
+
+function DisplayCartProducts()
