@@ -245,7 +245,31 @@
     </footer>
 
     <!--Checkout Modal-->
-    
+    <div id="checkoutModal" class="modal">
+
+      <div class="modal-content" style="width: 600px!important;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkoutModalLongTitle">Checkout</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <p>Thank you for your order! Please proceed with payment to confirm your order.</p>
+        <div id="paypal" style="width: 400px;">
+        </div>
+      </div>
+    </div>
+  
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
+      <script scr="js/main.js"></script>
+      <script src="js/maps.js"></script>
+      <script>
+        function OpenModal() {
+          $("#myModal").modal('show');
+        }
+      </script>
    
     <script scr="js/maps.js"></script>
   </body>
