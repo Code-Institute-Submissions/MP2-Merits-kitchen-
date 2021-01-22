@@ -1,3 +1,5 @@
+"use strict";
+
 const btn = document.getElementById("sendMessage");
 
 document

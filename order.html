@@ -21,182 +21,112 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script>paypal.Buttons().render('#paypal');</script>
+    <script>
+      paypal.Buttons().render("#paypal");
+    </script>
     <title>Merits kitchen</title>
   </head>
 
   <body>
-      <!--Header section-->
+    <!--Header section-->
     <header class="header-section">
-        <div class="menu-item">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="logo align-items-center">
-                  <a href="./index.html">
-                    <h2>MERIT'S KITCHEN</h2>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-10">
-                <div class="nav-menu">
-                  <nav class="mainmenu">
-                    <ul>
-                      <li>
-                        <h1><a onclick="OpenModal()" href="./index.html">HOW IT WORKS</a></h1>
-                      </li>
-                      <li class="active">
-                        <h1><a href="./order.html">ORDER FROM MENU</a></h1>
-                      </li>
-                      <li>
-                        <h1><a href="./contact.html">CONTACT ME</a></h1>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-    </header>
-
-    <!--Food menu section-->
-    <div class="food-menu-section">
+      <div class="menu-item">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
-              <div class="food-menu-text">
-                <h2>Our Food Menu</h2>
+            <div class="col-lg-2">
+              <div class="logo align-items-center">
+                <a href="./index.html">
+                  <h2>MERIT'S KITCHEN</h2>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-10">
+              <div class="nav-menu">
+                <nav class="mainmenu">
+                  <ul>
+                    <li>
+                      <h1>
+                        <a onclick="OpenModal()" href="./index.html"
+                          >HOW IT WORKS</a
+                        >
+                      </h1>
+                    </li>
+                    <li>
+                      <h1><a href="./order.html">ORDER FROM MENU</a></h1>
+                    </li>
+                    <li>
+                      <h1><a href="./contact.html">CONTACT ME</a></h1>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </header>
 
-      <section class="order-section">
-        <div class="container">
-          <div class="food-items">
-            <div class="row" id="products">
-              <!--Dynamic products here-->
+    <!--Food menu section-->
+    <div class="food-menu-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="food-menu-text">
+              <h2>Our Food Menu</h2>
             </div>
           </div>
         </div>
-      </section>
-
-      <!---
-      <section class="food-section spad">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="food-menu-item" id="accordion">
-                <img src="images/1.jpeg" alt="Food image" />
-                <div class="descr">
-                  <p>Pizza Margherita <span class="price">DKK 70</span><br />
-                    <small>Mustard sierra leone bologi kale chard beet greens
-                    black-eyed pea sorrel amaranth garlic tigernut spring onion
-                    summer purslane asparagus lentil. </small></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="food-menu-item">
-                <img src="images/7.jpg" alt="Food image" />
-                <div class="descr">
-                    <p>Pizza Margheritah <span class="price">DKK 70</span><br />
-                        <small>Mustard sierra leone bologi kale chard beet greens
-                        black-eyed pea sorrel amaranth garlic tigernut spring onion
-                        summer purslane asparagus lentil. </small></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="food-menu-item">
-                <img src="images/2.jpeg" alt="Food image" />
-                <div class="descr">
-                    <p>Chicken salad <span class="price">DKK 60</span><br />
-                        <small>Mustard sierra leone bologi kale chard beet greens
-                        black-eyed pea sorrel amaranth garlic tigernut spring onion
-                        summer purslane asparagus lentil. </small></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="food-menu-item">
-                <img src="images/4.jpeg" alt="Food image" />
-                <div class="descr">
-                    <p>Tiramisu <span class="price">DKK 50</span><br />
-                        <small>Mustard sierra leone bologi kale chard beet greens
-                        black-eyed pea sorrel amaranth garlic tigernut spring onion
-                        summer purslane asparagus lentil. </small></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="food-menu-item">
-                <img src="images/5.jpeg" alt="Food image" />
-                <div class="descr">
-                    <p>Pancakes <span class="price">DKK 40</span><br />
-                        <small>Mustard sierra leone bologi kale chard beet greens
-                        black-eyed pea sorrel amaranth garlic tigernut spring onion
-                        summer purslane asparagus lentil. </small></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="food-menu-item">
-                <img src="images/6.jpeg" alt="Food image" />
-                <div class="descr">
-                    <p>Sea Food Menu <span class="price">DKK 85</span><br />
-                        <small>Mustard sierra leone bologi kale chard beet greens
-                        black-eyed pea sorrel amaranth garlic tigernut spring onion
-                        summer purslane asparagus lentil. </small></p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-      -->
-
-      <!--Checkout form, snippet taken from w3schools.com-->
-      <section class="checkout-section">
-        <div class="container">
-          <div class="row-checkout">
-              <div class="col-lg-6">
-                  <form class="checkout-form" action="/action_page.php">
-                      <h3>Billing Address</h3>
-                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                      <input type="text" id="email" name="email" placeholder="john@example.com">
-                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                  </form>
-              </div>
-              <div class="col-lg-6" id="cart">
-                <!--Dynamic cart here-->
-              </div>
-          </div>
-        </div>
-      </section>
-            
-      <!--
-                <h3>Cart
-                <span class="price" style="color:black">
-                    <i class="fa fa-shopping-cart"></i>
-                    <b>4</b>
-                </span>
-                </h3>
-                <p><a href="#">Product 1</a> <span class="price">DKK 15</span></p>
-                <p><a href="#">Product 2</a> <span class="price">DKK 5</span></p>
-                <p><a href="#">Product 3</a> <span class="price">DKK 8</span></p>
-                <p><a href="#">Product 4</a> <span class="price">DKK 2</span></p>
-                <hr>
-                <p>Total <span class="price" style="color:black"><b>DKK 30</b></span></p>
-            </div>
-        </div>
+      </div>
     </div>
-    -->
+
+    <section class="order-section">
+      <div class="container">
+        <div class="food-items">
+          <div class="row" id="products">
+            <!--Dynamic products here-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Checkout form, snippet taken from w3schools.com-->
+    <section class="checkout-section">
+      <div class="container">
+        <div class="row-checkout">
+          <div class="col-lg-6">
+            <form class="checkout-form" action="/action_page.php">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="John M. Doe"
+              />
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+              />
+              <label for="adr"
+                ><i class="fa fa-address-card-o"></i> Address</label
+              >
+              <input
+                type="text"
+                id="adr"
+                name="address"
+                placeholder="542 W. 15th Street"
+              />
+            </form>
+          </div>
+          <div class="col-lg-6" id="cart">
+            <!--Dynamic cart here-->
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--Footer section-->
     <footer class="footer-section">
@@ -246,30 +176,35 @@
 
     <!--Checkout Modal-->
     <div id="checkoutModal" class="modal">
-
-      <div class="modal-content" style="width: 600px!important;">
+      <div class="modal-content" style="width: 600px !important">
         <div class="modal-header">
           <h5 class="modal-title" id="checkoutModalLongTitle">Checkout</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <p>Thank you for your order! Please proceed with payment to confirm your order.</p>
-        <div id="paypal" style="width: 400px;">
-        </div>
+        <p>
+          Thank you for your order! Please proceed with payment to confirm your
+          order.
+        </p>
+        <div id="paypal" style="width: 400px"></div>
       </div>
     </div>
-  
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script scr="js/main.js"></script>
-    <script src="js/maps.js"></script>
+    <script src="js/main.js"></script>
     <script>
-        $(document).ready(function () {
-          DisplayProducts();
-          DisplayCartProducts();
-        });
+      $(document).ready(function () {
+        DisplayProducts();
+        DisplayCartProducts();
+      });
     </script>
   </body>
 </html>

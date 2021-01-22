@@ -1,3 +1,5 @@
+"use strict";
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
@@ -23,41 +25,3 @@ function initMap() {
       "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
   });
 }
-
-(function ($) {
-  $(window).on("load", function () {
-    $(".loader").fadeOut();
-    $("#preloder").delay(200).fadeOut("slow");
-  });
-
-  $(".set-bg").each(function () {
-    var bg = $(this).data("setbg");
-    $(this).css("background-image", "url(" + bg + ")");
-  });
-
-  $(".food-slider").owlCarousel({
-    loop: true,
-    margin: 0,
-    items: 1,
-    dots: true,
-    animateOut: "fadeOut",
-    animateIn: "fadeIn",
-    smartSpeed: 1200,
-    autoHeight: false,
-    autoplay: true,
-    mouseDrag: false,
-  });
-  $(".review-slider").owlCarousel({
-    items: 1,
-    dots: false,
-    autoplay: true,
-    loop: true,
-    smartSpeed: 1200,
-    nav: true,
-    navText: ["<i class='arrow_left'></i>", "<i class='arrow_right'></i>"],
-  });
-})(jQuery);
-
-$(function () {
-  $("#accordion").accordion();
-});

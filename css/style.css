@@ -470,9 +470,7 @@ ol {
 }
 
 /*--------------------------------------Food Menu section*/
-.price {
-  float: right;
-}
+
 .food-menu-section {
   padding-top: 70px;
   padding-bottom: 80px;
@@ -484,46 +482,6 @@ ol {
   font-size: 38px;
   color: #19191a;
   margin-bottom: 12px;
-}
-
-.food-section {
-  padding-top: 0;
-  padding-bottom: 80px;
-}
-
-.descr {
-  height: 70px;
-  background-size: cover;
-  position: relative;
-  margin-top: 5px;
-  border-radius: 12px;
-}
-
-.descr p {
-  color: #aaaab3;
-  background: #222736;
-  line-height: 28px;
-  text-align: justify;
-  position: absolute;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 0;
-  height: 30px;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-}
-
-small {
-  opacity: 0;
-}
-
-.show-description p {
-  height: 150px;
-}
-
-.show-description small {
-  opacity: 1;
 }
 
 /*--------------------------------------Checkout form*/
