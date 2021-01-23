@@ -41,7 +41,7 @@ var Products = [
     price: "DKK 70",
     description:
       "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
-    image: "images/1.jpeg",
+    image: "images/11.jpg",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ var Products = [
     price: "DKK 70",
     description:
       "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
-    image: "images/7.jpg",
+    image: "images/8.jpg",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ var Products = [
     price: "DKK 60",
     description:
       "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
-    image: "images/2.jpeg",
+    image: "images/9.jpg",
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ var Products = [
     price: "DKK 50",
     description:
       "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
-    image: "images/4.jpeg",
+    image: "images/2.jpeg",
   },
   {
     id: 5,
@@ -81,7 +81,7 @@ var Products = [
     price: "DKK 85",
     description:
       "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
-    image: "images/6.jpeg",
+    image: "images/4.jpeg",
   },
 ];
 
@@ -125,7 +125,7 @@ function AddToCart(ItemId) {
   debugger;
   var Product = Products.find((x) => x.id === ItemId);
   CartsProducts.push(Product);
-  TotalCartAmount += Number(Product.price.split("")[1]);
+  TotalCartAmount += Number(Product.price.split(" ")[1]);
   if (CartsProducts.length > 0) {
     CartProductsCount = CartsProducts.length;
   }

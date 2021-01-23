@@ -113,10 +113,6 @@ ol {
 }
 
 /*--------------------------------------Modal*/
-
-.modal {
-  z-index: 1051 !important;
-}
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -133,7 +129,7 @@ ol {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #dfa974;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -233,6 +229,94 @@ ol {
   z-index: 5;
 }
 
+.booking-form {
+  background: #ffffff;
+  padding: 44px 40px 50px 40px;
+  border-radius: 4px;
+}
+.booking-form h3 {
+  color: #19191a;
+  margin-bottom: 36px;
+}
+.booking-form form .check-date {
+  position: relative;
+  margin-bottom: 15px;
+}
+.booking-form form .check-date label {
+  font-size: 14px;
+  color: #707079;
+  display: block;
+  margin-bottom: 10px;
+}
+.booking-form form .check-date input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ebebeb;
+  border-radius: 2px;
+  font-size: 16px;
+  color: #19191a;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.booking-form form .check-date i {
+  color: #dfa974;
+  position: absolute;
+  right: 18px;
+  bottom: 17px;
+}
+.booking-form form .select-option {
+  margin-bottom: 15px;
+}
+.booking-form form .select-option label {
+  font-size: 14px;
+  color: #707079;
+  display: block;
+  margin-bottom: 10px;
+}
+.booking-form form .select-option .nice-select {
+  border-radius: 2px;
+  border: 1px solid #ebebeb;
+  height: 50px;
+  line-height: 50px;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+  float: none;
+}
+.booking-form form .select-option .nice-select:after {
+  border-bottom: 2px solid #dfa974;
+  border-right: 2px solid #dfa974;
+  height: 10px;
+  margin-top: 0;
+  right: 20px;
+  width: 10px;
+  top: 36%;
+}
+.booking-form form .select-option .nice-select span {
+  font-size: 16px;
+  color: #19191a;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.booking-form form .select-option .nice-select .list {
+  margin-top: 0;
+  width: 100%;
+}
+.booking-form form button {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #dfa974;
+  border-radius: 2px;
+  color: #dfa974;
+  font-weight: 500;
+  background: transparent;
+  width: 100%;
+  height: 46px;
+  margin-top: 30px;
+}
+
 /* lai uz bildes var uzlikt ko virsu*/
 .food-slider {
   position: absolute;
@@ -286,8 +370,19 @@ ol {
   position: relative;
   overflow: hidden;
 }
+.food-menu {
+  padding: 20px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
 
 .food-item:hover .food-text {
+  bottom: 100px;
+  margin-bottom: 30px;
+}
+
+.food-menu:hover .food-text {
   bottom: 100px;
   margin-bottom: 30px;
 }
@@ -296,7 +391,7 @@ ol {
   position: absolute;
   left: 45px;
   right: 25px;
-  bottom: -250px;
+  bottom: -350px;
   transition: all 0.5s;
 }
 .food-text h3 {
@@ -307,6 +402,11 @@ ol {
   color: #dfa974;
   font-weight: 700;
   margin-bottom: 50px;
+  transition: all 0.2s;
+}
+.food-text p {
+  color: #dfa974;
+  font-weight: 500;
   transition: all 0.2s;
 }
 
@@ -470,7 +570,9 @@ ol {
 }
 
 /*--------------------------------------Food Menu section*/
-
+.price {
+  float: right;
+}
 .food-menu-section {
   padding-top: 70px;
   padding-bottom: 80px;
@@ -482,6 +584,56 @@ ol {
   font-size: 38px;
   color: #19191a;
   margin-bottom: 12px;
+}
+
+.food-section {
+  height: 600px;
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+.order-section {
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+.checkout-section {
+  height: 600px;
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+
+.descr {
+  height: 70px;
+  background-size: cover;
+  position: relative;
+  margin-top: 5px;
+  border-radius: 12px;
+}
+
+.descr p {
+  color: #aaaab3;
+  background: #222736;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
+  height: 30px;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
 }
 
 /*--------------------------------------Checkout form*/
@@ -538,7 +690,20 @@ label {
   cursor: pointer;
   font-size: 17px;
 }
+.btn-order {
+  background-color: #9a6c3f;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  border-radius: 17px;
+  cursor: pointer;
+}
 
+.center {
+  text-align: center;
+}
 span.price {
   float: right;
   color: grey;
@@ -598,4 +763,7 @@ div#map {
   -webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
   margin-top: 75px;
+}
+.modal {
+  z-index: 1051 !important;
 }
