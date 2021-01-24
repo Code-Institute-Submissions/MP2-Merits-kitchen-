@@ -45,7 +45,7 @@
                   <ul>
                     <li>
                       <h1>
-                        <a onclick="OpenModal()">HOW IT WORKS</a>
+                        <a onclick="openModal()">HOW IT WORKS</a>
                       </h1>
                     </li>
                     <li>
@@ -62,6 +62,14 @@
         </div>
       </div>
     </header>
+    <dp-modal>
+      <h1 slot="title">Merit's Kitchen</h1>
+      <p slot="main">
+        Merit's kitchen is home made food restaurant which is runned by Merit
+        Thomsen. Merit cooks every day for her 3 boys and husband. She knows how
+        stressful can be planning dinner often long tiring day at work.
+      </p>
+    </dp-modal>
 
     <!--Hero section-->
     <section class="food-section">
@@ -219,38 +227,15 @@
       </div>
     </footer>
 
-    <!--Taken snippet from w3schools.com-->
-    <!-- The Modal-->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">
-            Merit's Kitchen
-          </h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <p>
-          Merit's kitchen is home made food restaurant which is runned by Merit
-          Thomsen. Merit cooks every day for her 3 boys and husband. She knows
-          how stresfull can be planning dinner aften long tiring day at work.
-        </p>
-      </div>
-    </div>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
     <script>
-      function OpenModal() {
-        $("#myModal").modal("show");
+      function openModal() {
+        const modal = document.querySelector("dp-modal");
+        modal.open();
       }
     </script>
   </body>
