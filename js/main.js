@@ -37,50 +37,49 @@
 var Products = [
   {
     id: 1,
-    name: "Pizza Margherita",
+    name: "VEGETARIAN TART",
     price: "DKK 70",
     description:
-      "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
+      "Vegetable tart with sun dried tomatoes. Perfect for vegetarian dinner.",
     image: "images/11.jpg",
   },
   {
     id: 2,
-    name: "Pizza Margherita",
-    price: "DKK 70",
-    description:
-      "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
+    name: "NOODLE SOUP WITH BEEF",
+    price: "DKK 50",
+    description: "Asian style noodle soup with vegetables and beef.",
     image: "images/8.jpg",
   },
   {
     id: 3,
-    name: "Chicken salad",
-    price: "DKK 60",
+    name: "EDAMAME BEANS",
+    price: "DKK 35",
     description:
-      "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
+      "Choose between salted or spicy. Or take them both. Good starter before meal.",
     image: "images/9.jpg",
   },
   {
     id: 4,
-    name: "Tiramisu",
-    price: "DKK 50",
+    name: "CHICKEN SALAD",
+    price: "DKK 60",
     description:
-      "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
+      "Warm salad with fresh or grilled vegetables and marinade chicken breast. Can be a good starter or main meal.",
     image: "images/2.jpeg",
   },
   {
     id: 5,
-    name: "Pancakes",
-    price: "DKK 40",
+    name: "PEARL BARLEY RISOTTO",
+    price: "DKK 80",
     description:
-      "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
+      "Traditional pearl barley risotto bowl with smoked meat, cheese and egg.",
     image: "images/5.jpg",
   },
   {
     id: 6,
-    name: "Sea Food Menu",
-    price: "DKK 85",
+    name: "BROWNIE",
+    price: "DKK 20",
     description:
-      "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
+      "Cocoa brownie with browned butter and walnuts. Tasty and healthy!",
     image: "images/4.jpg",
   },
 ];
