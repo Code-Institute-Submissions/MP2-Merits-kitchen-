@@ -4,14 +4,14 @@ class Tooltip extends HTMLElement {
     super();
     this._tooltipIcon;
     this._tooltipVisible = false;
-    this._tooltipText = "Some dummy tooltip text.";
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
         <style>
             div {
-              font-weight: small;
+              font-size: 28px;
+              font-family: Cabin, sans-serif;
               background-color: #dfa974;
-              color: white;
+              color: black;
               position: absolute;
               top: 1.5rem;
               left: 0.75rem;
@@ -28,18 +28,6 @@ class Tooltip extends HTMLElement {
             :host(.important) {
               background: var(--color-primary, #ccc);
               padding: 0.15rem;
-            }
-
-            :host-context(p) {
-              font-weight: bold;
-            }
-
-            .highlight {
-              background-color: red;
-            }
-
-            ::slotted(.highlight) {
-              border-bottom: 1px dotted red;
             }
 
             .icon {
@@ -113,4 +101,4 @@ class Tooltip extends HTMLElement {
   }
 }
 
-customElements.define("uc-tooltip", Tooltip);
+customElements.define("dp-tooltip", Tooltip);
