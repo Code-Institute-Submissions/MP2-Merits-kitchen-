@@ -73,7 +73,7 @@ var Products = [
     price: "DKK 40",
     description:
       "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
-    image: "images/5.jpeg",
+    image: "images/5.jpg",
   },
   {
     id: 6,
@@ -81,7 +81,7 @@ var Products = [
     price: "DKK 85",
     description:
       "Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil.",
-    image: "images/4.jpeg",
+    image: "images/4.jpg",
   },
 ];
 

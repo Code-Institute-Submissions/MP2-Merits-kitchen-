@@ -3,7 +3,6 @@ class Modal extends HTMLElement {
   constructor() {
     super();
     this._cancelButton;
-    this._confirmButton;
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
             <style>
@@ -76,27 +75,14 @@ class Modal extends HTMLElement {
                 }
                 #cancel {
                     box-shadow:inset 0px 1px 0px 0px #f7c5c0;
-                    background: #fc8d83 linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+                    background: #dfa974 linear-gradient(to bottom, #dfa974 5%, #e4685d 100%);
                     border:1px solid #d83526;
                     text-shadow:0px 1px 0px #b23e35
                 }
                 #cancel:hover {
-                    background: #e4685d linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+                    background: #dfa974 linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
                 }
                 #cancel:active {
-                    position:relative;
-                    top:1px;
-                }
-                #confirm {
-                    box-shadow:inset 0px 1px 0px 0px #d9fbbe;
-                    background: #b8e356 linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
-                    border:1px solid #83c41a;
-                    text-shadow:0px 1px 0px #86ae47;
-                }
-                #confirm:hover {
-                    background: #a5cc52 linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
-                }
-                #confirm:active {
                     position:relative;
                     top:1px;
                 }
@@ -121,22 +107,13 @@ class Modal extends HTMLElement {
 
   connectedCallback() {
     this._cancelButton = this.shadowRoot.querySelector("#cancel");
-    this._confirmButton = this.shadowRoot.querySelector("#confirm");
     this._cancelButton.addEventListener(
       "click",
       this._cancelConfirm.bind(this)
     );
-    this._confirmButton.addEventListener(
-      "click",
-      this._confirmConfirm.bind(this)
-    );
   }
 
   _cancelConfirm(event) {
-    this.hide();
-  }
-
-  _confirmConfirm() {
     this.hide();
   }
 
