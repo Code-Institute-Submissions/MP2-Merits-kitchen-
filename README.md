@@ -8,7 +8,8 @@ The website is created with the purpose to advertise customers about Merit's hom
 
 ### Mockup
 
-![Merit's kitchen mockup] ()
+![Merit's kitchen mockup] (wireframes/mock-up.png)
+![Merit's kitchen mockup](wireframes/mock-up.png)
 
 The website has been made ...
 

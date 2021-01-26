@@ -55,7 +55,7 @@ var Products = [
     name: "EDAMAME BEANS",
     price: "DKK 35",
     description:
-      "Choose between salted or spicy. Or take them both. Good starter before meal.",
+      "Can choose between salted or spicy version. Or take them both! Good starter before meal.",
     image: "images/9.jpg",
   },
   {
@@ -63,7 +63,7 @@ var Products = [
     name: "CHICKEN SALAD",
     price: "DKK 60",
     description:
-      "Warm salad with fresh or grilled vegetables and marinade chicken breast. Can be a good starter or main meal.",
+      "Warm salad with fresh or grilled vegetables and marinade chicken breast. Can be as a good starter or main meal.",
     image: "images/2.jpeg",
   },
   {

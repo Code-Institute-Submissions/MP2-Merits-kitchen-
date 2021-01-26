@@ -76,11 +76,11 @@ class Modal extends HTMLElement {
                 #cancel {
                     box-shadow:inset 0px 1px 0px 0px #f7c5c0;
                     background: #dfa974 linear-gradient(to bottom, #dfa974 5%, #e4685d 100%);
-                    border:1px solid #d83526;
+                    border:1px solid #dfa974;
                     text-shadow:0px 1px 0px #b23e35
                 }
                 #cancel:hover {
-                    background: #dfa974 linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+                    background: #dfa974 linear-gradient(to bottom, #e4685d 5%, #dfa974 100%);
                 }
                 #cancel:active {
                     position:relative;
