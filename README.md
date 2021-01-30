@@ -8,7 +8,6 @@ The website is created with the purpose to advertise customers about Merit's hom
 
 ### Mockup
 
-![Merit's kitchen mockup] (wireframes/mock-up.png)
 ![Merit's kitchen mockup](wireframes/mock-up.png)
 
 The website has been made ...
@@ -62,8 +61,8 @@ The website is hosted usign GitHub and deployed directly from the master branch.
 All changes in website will be updated automatically once command 'git push' is runned.
 In order to deploy website correctly on GitHub, the landing page must be named 'index.html'.
 
-Live version of the website can be found under the link: (https://dinapapsujevica.github.io/MP1-Portfolio/).  
-Source code on GitHub can be found under the link: (https://github.com/DinaPapsujevica/MP1-Portfolio.git).
+Live version of the website can be found under the link: (https://dinapapsujevica.github.io/MP2-Merits-kitchen-/).  
+Source code on GitHub can be found under the link: (https://github.com/DinaPapsujevica/MP2-Merits-kitchen-.git).
 
 ## Credits
 
