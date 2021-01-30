@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
     />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -28,6 +29,43 @@
   </head>
 
   <body>
+    <!--Loader-->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!--Mobile menu-->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="canvas-close">
+        <i class="fas fa-times"></i>
+      </div>
+      <nav class="mainmenu mobile-menu">
+        <ul>
+          <li>
+            <h1><a href="./index.html">HOW IT WORKS</a></h1>
+          </li>
+          <li class="active">
+            <h1><a href="./order.html">ORDER FROM MENU</a></h1>
+          </li>
+          <li>
+            <h1><a href="./contact.html">CONTACT ME</a></h1>
+          </li>
+        </ul>
+      </nav>
+      <div id="mobile-menu-wrap"></div>
+      <div class="top-social">
+        <a target="_blank" href="https://www.facebook.com/"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a target="_blank" href="https://www.instagram.com"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+    </div>
     <!--Header section-->
     <header class="header-section">
       <div class="menu-item">
@@ -84,7 +122,6 @@
         </div>
       </div>
     </div>
-
     <section class="order-section">
       <div class="container">
         <div class="food-items">
@@ -98,8 +135,8 @@
     <!--Checkout form, snippet taken from w3schools.com-->
     <section class="checkout-section">
       <div class="container">
-        <div class="row-checkout">
-          <div class="col-lg-6">
+        <div class="row m-16">
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <form class="checkout-form" action="/action_page.php">
               <h3>Billing Address</h3>
               <label for="fname"><i class="fa fa-user"></i> Full Name</label>
@@ -127,7 +164,7 @@
               />
             </form>
           </div>
-          <div class="col-lg-6" id="cart">
+          <div class="col-lg-6 col-md-6 col-sm-12" id="cart">
             <!--Dynamic cart here-->
           </div>
         </div>
@@ -207,9 +244,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tooltip.js"></script>
     <script>
+      // Display products on page load
       $(document).ready(function () {
         DisplayProducts();
         DisplayCartProducts();
