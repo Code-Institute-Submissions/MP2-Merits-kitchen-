@@ -6,12 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   height: 100%;
   color: #19191a;
 }
-
 h1,
 h2,
 h3,
@@ -31,7 +29,6 @@ h3 {
 h5 {
   font-size: 18px;
 }
-
 p {
   font-size: 16px;
   font-family: Cabin, sans-serif;
@@ -40,7 +37,6 @@ p {
   line-height: 26px;
   margin: 0 0 15px 0;
 }
-
 a:hover,
 a:focus {
   text-decoration: none;
@@ -52,13 +48,23 @@ ol {
   padding: 0;
   margin: 0;
 }
+img {
+  max-width: 100%;
+}
 
 /*--------------------------------------Header section */
+.pointer {
+  cursor: pointer;
+}
 .menu-item {
   position: relative;
+  z-index: 9;
 }
 .logo {
   padding: 25px 0;
+}
+.logo a {
+  display: inline-block;
 }
 .nav-menu {
   text-align: right;
@@ -70,8 +76,8 @@ ol {
   list-style: none;
   display: inline-block;
   position: relative;
+  z-index: 1;
 }
-
 .mainmenu h1 {
   font-size: 80px;
 }
@@ -81,16 +87,18 @@ ol {
 .mainmenu li:hover > a:after {
   opacity: 1;
 }
-
 .mainmenu li a {
-  font-size: 20px;
+  font-size: 16px;
   color: #19191a;
   margin-right: 42px;
   font-weight: 500;
+  display: inline-block;
   padding: 27px 0;
   position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
-
 .mainmenu li a:after {
   position: absolute;
   left: 0;
@@ -100,7 +108,67 @@ ol {
   background: #dfa974;
   content: "";
   opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
+.mainmenu li:hover .dropdown {
+  top: 77px;
+  opacity: 1;
+  visibility: visible;
+}
+.mainmenu li .dropdown {
+  position: absolute;
+  left: 0;
+  top: 97px;
+  width: 180px;
+  background: #ffffff;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0px 9px 15px rgba(25, 25, 26, 0.05);
+  box-shadow: 0px 9px 15px rgba(25, 25, 26, 0.05);
+}
+.mainmenu li .dropdown li {
+  list-style: none;
+  display: block;
+}
+.mainmenu li .dropdown li a {
+  font-size: 16px;
+  color: #19191a;
+  display: block;
+  text-align: left;
+  padding: 8px 15px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.mainmenu li .dropdown li a:hover {
+  color: #dfa974;
+}
+.mainmenu li .dropdown li a:after {
+  display: none;
+}
+.nav-right {
+  display: inline-block;
+  margin-left: 43px;
+  padding: 27px 0px;
+}
+.nav-right i {
+  font-size: 16px;
+  color: #19191a;
+  cursor: pointer;
+}
+.canvas-open {
+  display: none;
+}
+.offcanvas-menu-wrapper {
+  display: none;
+}
+
 /*--------------------------------------Loader on page load css */
 #preloder {
   position: fixed;
@@ -123,7 +191,6 @@ ol {
   animation: loader 0.8s linear infinite;
   -webkit-animation: loader 0.8s linear infinite;
 }
-
 @keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -168,17 +235,18 @@ ol {
   background-size: cover;
   background-position: top center;
 }
-
 .food-section {
   position: relative;
   padding-top: 60px;
   padding-bottom: 100px;
 }
+.food-section-height {
+  height: 600px;
+}
 .food-section .container {
   position: relative;
   z-index: 5;
 }
-
 .food-slider {
   position: absolute;
   width: 100%;
@@ -186,16 +254,14 @@ ol {
   left: 0;
   top: 0;
 }
-
-.food-slider.owl-carousel .owl-dots {
+.owl-dots {
   position: absolute;
   left: 0;
   bottom: 23px;
   width: 100%;
   text-align: center;
 }
-
-.food-slider.owl-carousel .owl-dots button {
+.owl-dots button {
   height: 6px;
   width: 6px;
   background: #ffffff;
@@ -206,14 +272,12 @@ ol {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-
-.food-slider.owl-carousel .owl-dots button.active {
+.owl-dots button.active {
   width: 30px;
   border-radius: 50px;
   opacity: 1;
 }
-
-.food-slider.owl-carousel .owl-dots button:last-child {
+.owl-dots button:last-child {
   margin-right: 0;
 }
 .food-slider .owl-stage-outer,
@@ -222,11 +286,9 @@ ol {
 .food-slider .hs-item {
   height: 100%;
 }
-
 .food-items {
   overflow: hidden;
 }
-
 .food-item {
   height: 500px;
   margin-right: -15px;
@@ -239,17 +301,14 @@ ol {
   position: relative;
   overflow: hidden;
 }
-
 .food-item:hover .food-text {
   bottom: 100px;
   margin-bottom: 30px;
 }
-
 .food-menu:hover .food-text {
   bottom: 100px;
   margin-bottom: 30px;
 }
-
 .food-text {
   position: absolute;
   left: 45px;
@@ -285,7 +344,7 @@ ol {
   cursor: pointer;
   font-size: 17px;
 }
-
+/*.sis japarbauda vai neatkartojas.*/
 .btn-order {
   background-color: white;
   color: black;
@@ -295,11 +354,13 @@ ol {
   font-size: 55px;
   font-family: Lora, sans-serif;
 }
-
 .btn-order:hover {
   background-color: white;
   color: black;
   border: none;
+}
+.center {
+  text-align: center;
 }
 
 /*--------------------------------------Review section*/
@@ -318,12 +379,11 @@ ol {
   padding-top: 70px;
   padding-bottom: 50px;
 }
-
-.review-slider.owl-carousel .owl-item img {
+.owl-item img {
   width: auto;
   margin: 0 auto;
 }
-.review-slider.owl-carousel .owl-nav button {
+.owl-nav button {
   height: 44px;
   width: 44px;
   border: 1px solid #9a6c3f;
@@ -342,11 +402,11 @@ ol {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.review-slider.owl-carousel .owl-nav button:hover {
+.owl-nav button:hover {
   border-color: #19191a;
   color: #19191a;
 }
-.review-slider.owl-carousel .owl-nav button.owl-next {
+.owl-nav button.owl-next {
   left: auto;
   right: -190px;
 }
@@ -359,7 +419,6 @@ ol {
   line-height: 30px;
   margin-bottom: 50px;
 }
-
 .review-slider .ts-item .ti-author {
   margin-bottom: 60px;
 }
@@ -368,3 +427,178 @@ ol {
   color: #19191a;
   display: inline-block;
 }
+
+/*--------------------------------------Footer section*/
+
+.footer-section {
+  background: #222736;
+}
+.footer-text {
+  padding: 80px 0 30px;
+}
+.footer-text p,
+.ft-newsletter p {
+  color: #aaaab3;
+  margin-bottom: 20px;
+}
+.fa-social a {
+  display: inline-block;
+  width: 40px;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  background: #dfa974;
+  border-color: #dfa974;
+}
+.ft-contact {
+  margin-bottom: 30px;
+}
+.ft-contact h6,
+.ft-newsletter h6 {
+  font-size: 14px;
+  color: #dfa974;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-family: Cabin, sans-serif;
+  margin-bottom: 20px;
+}
+.ft-contact ul li {
+  font-size: 16px;
+  color: #aaaab3;
+  line-height: 32px;
+  list-style: none;
+}
+.fn-form {
+  position: relative;
+}
+.fn-form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 2px;
+  background: #393d4a;
+  border: none;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #707079;
+}
+.fn-form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  background: #dfa974;
+  color: #ffffff;
+  padding: 0 16px;
+  height: 50px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+}
+
+/*--------------------------------------Order menu section*/
+.food-menu-section {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.food-menu-text {
+  text-align: center;
+}
+.food-menu-text h2 {
+  font-size: 38px;
+  color: #19191a;
+  margin-bottom: 12px;
+}
+.food-section {
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+.order-section {
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+.checkout-section {
+  height: 600px;
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+span.price {
+  float: right;
+  color: grey;
+}
+.m-16 {
+  margin: -16px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.checkout-form {
+  margin-bottom: 40px;
+}
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+/*japarbauda vai sis neatkartojas*/
+.btn-order {
+  background-color: #9a6c3f;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  border-radius: 17px;
+  cursor: pointer;
+}
+.modal {
+  z-index: 1051 !important;
+}
+
+/*--------------------------------------Contact section*/
+.contact-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.contact-text h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.contact-text p {
+  color: #707079;
+}
+.contact-text table tbody tr td {
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.contact-text table tbody tr td.c-o {
+  color: #707079;
+  width: 75px;
+}
+#contact-form textarea {
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding-left: 10px;
+  padding-top: 12px;
+}
+#contact-form button {
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  background: #dfa974;
+  border: none;
+  padding: 14px 34px 13px;
+  display: inline-block;
+}
+
+div#map {
+  min-height: 360px;
+  -webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+  margin-top: 75px;
+}
+
+/*--------------------------------------Responsive media styles*/
