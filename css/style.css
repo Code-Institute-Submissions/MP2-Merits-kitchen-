@@ -254,14 +254,15 @@ img {
   left: 0;
   top: 0;
 }
-.owl-dots {
+.food-slider.owl-carousel .owl-dots {
   position: absolute;
   left: 0;
   bottom: 23px;
   width: 100%;
   text-align: center;
 }
-.owl-dots button {
+
+.owl-carousel .owl-dots button {
   height: 6px;
   width: 6px;
   background: #ffffff;
@@ -272,12 +273,14 @@ img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.owl-dots button.active {
+
+.owl-carousel .owl-dots button.active {
   width: 30px;
   border-radius: 50px;
   opacity: 1;
 }
-.owl-dots button:last-child {
+
+.owl-carousel .owl-dots button:last-child {
   margin-right: 0;
 }
 .food-slider .owl-stage-outer,
@@ -378,37 +381,6 @@ img {
   background: #f9f9f9;
   padding-top: 70px;
   padding-bottom: 50px;
-}
-.owl-item img {
-  width: auto;
-  margin: 0 auto;
-}
-.owl-nav button {
-  height: 44px;
-  width: 44px;
-  border: 1px solid #9a6c3f;
-  font-size: 24px;
-  color: #9a6c3f;
-  background: #ffffff;
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  left: -190px;
-  top: 50%;
-  -webkit-transform: translateY(-6px);
-  -ms-transform: translateY(-6px);
-  transform: translateY(-6px);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.owl-nav button:hover {
-  border-color: #19191a;
-  color: #19191a;
-}
-.owl-nav button.owl-next {
-  left: auto;
-  right: -190px;
 }
 .review-slider .ts-item {
   text-align: center;
@@ -555,6 +527,43 @@ input[type="text"] {
 }
 .modal {
   z-index: 1051 !important;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*--------------------------------------Contact section*/
