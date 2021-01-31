@@ -272,3 +272,99 @@ ol {
   font-weight: 500;
   transition: all 0.2s;
 }
+
+/*--------------------------------------Buttons*/
+.btn-checkout {
+  background-color: #dfa974;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 60%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn-order {
+  background-color: white;
+  color: black;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 55px;
+  font-family: Lora, sans-serif;
+}
+
+.btn-order:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+/*--------------------------------------Review section*/
+.section-title {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.section-title h2 {
+  font-size: 38px;
+  color: #19191a;
+  line-height: 58px;
+  margin-top: 10px;
+}
+.review-section {
+  background: #f9f9f9;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.review-slider.owl-carousel .owl-item img {
+  width: auto;
+  margin: 0 auto;
+}
+.review-slider.owl-carousel .owl-nav button {
+  height: 44px;
+  width: 44px;
+  border: 1px solid #9a6c3f;
+  font-size: 24px;
+  color: #9a6c3f;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: -190px;
+  top: 50%;
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.review-slider.owl-carousel .owl-nav button:hover {
+  border-color: #19191a;
+  color: #19191a;
+}
+.review-slider.owl-carousel .owl-nav button.owl-next {
+  left: auto;
+  right: -190px;
+}
+.review-slider .ts-item {
+  text-align: center;
+}
+.review-slider .ts-item p {
+  font-size: 20px;
+  color: #707079;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.review-slider .ts-item .ti-author {
+  margin-bottom: 60px;
+}
+.review-slider .ts-item .ti-author h5 {
+  font-size: 20px;
+  color: #19191a;
+  display: inline-block;
+}
