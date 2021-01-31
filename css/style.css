@@ -60,34 +60,34 @@ img {
   position: relative;
   z-index: 9;
 }
-.logo {
+.menu-item .logo {
   padding: 25px 0;
 }
-.logo a {
+.menu-item .logo a {
   display: inline-block;
 }
-.nav-menu {
+.menu-item .nav-menu {
   text-align: right;
 }
-.mainmenu {
+.menu-item .nav-menu .mainmenu {
   display: inline-block;
 }
-.mainmenu li {
+.menu-item .nav-menu .mainmenu li {
   list-style: none;
   display: inline-block;
   position: relative;
   z-index: 1;
 }
-.mainmenu h1 {
+.menu-item .nav-menu .mainmenu h1 {
   font-size: 80px;
 }
-.mainmenu li.active a:after {
+.menu-item .nav-menu .mainmenu li.active a:after {
   opacity: 1;
 }
-.mainmenu li:hover > a:after {
+.menu-item .nav-menu .mainmenu li:hover > a:after {
   opacity: 1;
 }
-.mainmenu li a {
+.menu-item .nav-menu .mainmenu li a {
   font-size: 16px;
   color: #19191a;
   margin-right: 42px;
@@ -99,7 +99,7 @@ img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.mainmenu li a:after {
+.menu-item .nav-menu .mainmenu li a:after {
   position: absolute;
   left: 0;
   top: 52px;
@@ -112,12 +112,12 @@ img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.mainmenu li:hover .dropdown {
+.menu-item .nav-menu .mainmenu li:hover .dropdown {
   top: 77px;
   opacity: 1;
   visibility: visible;
 }
-.mainmenu li .dropdown {
+.menu-item .nav-menu .mainmenu li .dropdown {
   position: absolute;
   left: 0;
   top: 97px;
@@ -132,11 +132,11 @@ img {
   -webkit-box-shadow: 0px 9px 15px rgba(25, 25, 26, 0.05);
   box-shadow: 0px 9px 15px rgba(25, 25, 26, 0.05);
 }
-.mainmenu li .dropdown li {
+.menu-item .nav-menu .mainmenu li .dropdown li {
   list-style: none;
   display: block;
 }
-.mainmenu li .dropdown li a {
+.menu-item .nav-menu .mainmenu li .dropdown li a {
   font-size: 16px;
   color: #19191a;
   display: block;
@@ -146,18 +146,18 @@ img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.mainmenu li .dropdown li a:hover {
+.menu-item .nav-menu .mainmenu li .dropdown li a:hover {
   color: #dfa974;
 }
-.mainmenu li .dropdown li a:after {
+.menu-item .nav-menu .mainmenu li .dropdown li a:after {
   display: none;
 }
-.nav-right {
+.menu-item .nav-menu .nav-right {
   display: inline-block;
   margin-left: 43px;
   padding: 27px 0px;
 }
-.nav-right i {
+.menu-item .nav-menu .nav-right i {
   font-size: 16px;
   color: #19191a;
   cursor: pointer;
@@ -348,14 +348,18 @@ img {
   font-size: 17px;
 }
 /*.sis japarbauda vai neatkartojas.*/
+/*japarbauda vai sis neatkartojas*/
 .btn-order {
-  background-color: white;
-  color: black;
-  padding: 12px;
-  border: none;
-  cursor: pointer;
+  background-color: #9a6c3f;
+  color: white;
   font-size: 55px;
   font-family: Lora, sans-serif;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 50%;
+  border-radius: 17px;
+  cursor: pointer;
 }
 .btn-order:hover {
   background-color: white;
@@ -514,17 +518,7 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-/*japarbauda vai sis neatkartojas*/
-.btn-order {
-  background-color: #9a6c3f;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 50%;
-  border-radius: 17px;
-  cursor: pointer;
-}
+
 .modal {
   z-index: 1051 !important;
 }
