@@ -125,7 +125,7 @@ Links will open in a new tab using target="\_blank". All links have been manuall
 - Slicknav in medium and small sizes
 - linking js path in html
 - implement informative modal in website
--
+- responsive modal for all screen sizes
 
 ## Deployment
 
