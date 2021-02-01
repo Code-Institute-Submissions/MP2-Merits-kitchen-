@@ -10,7 +10,7 @@ The website is created with the purpose to advertise and inform community in Ama
 
 ![Merit's kitchen mockup](wireframes/mock-up.png)
 
-As a custumer I want to see dishes and prices what Merit's kitchen offers. I want to see how looks final product what I can get in Merit's kitchen. Delicious food pictures helps me to feel hungry and motivates me to order food for my diner.
+As a customer I want to see the menu and prices of what Merit's kitchen offers. I want to see what the final product looks that I can get in Merit's kitchen. Delicious food pictures help me to feel hungry and motivates me to order food for my dinner.
 
 Website consists of 4 sections:
 

@@ -261,7 +261,6 @@ img {
   width: 100%;
   text-align: center;
 }
-
 .owl-carousel .owl-dots button {
   height: 6px;
   width: 6px;
@@ -273,13 +272,11 @@ img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .owl-carousel .owl-dots button.active {
   width: 30px;
   border-radius: 50px;
   opacity: 1;
 }
-
 .owl-carousel .owl-dots button:last-child {
   margin-right: 0;
 }
@@ -347,8 +344,6 @@ img {
   cursor: pointer;
   font-size: 17px;
 }
-/*.sis japarbauda vai neatkartojas.*/
-/*japarbauda vai sis neatkartojas*/
 .btn-order {
   background-color: #9a6c3f;
   color: white;
@@ -518,7 +513,6 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-
 .modal {
   z-index: 1051 !important;
 }
@@ -535,8 +529,6 @@ input[type="text"] {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
-
-/* Modal Content */
 .modal-content {
   background-color: white;
   margin: auto;
@@ -544,15 +536,12 @@ input[type="text"] {
   border: 1px solid #888;
   width: 80%;
 }
-
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
@@ -596,7 +585,6 @@ input[type="text"] {
   padding: 14px 34px 13px;
   display: inline-block;
 }
-
 div#map {
   min-height: 360px;
   -webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
@@ -610,7 +598,6 @@ div#map {
     flex-direction: column-reverse;
   }
 }
-
 @media only screen and (min-width: 1554px) and (max-width: 1920px) {
   .food-items .food-item .food-text {
     bottom: -200px;
@@ -626,14 +613,7 @@ div#map {
     max-width: 1170px;
   }
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .review-slider.owl-carousel .owl-nav button {
-    left: -150px;
-  }
-  .review-slider.owl-carousel .owl-nav button.owl-next {
-    right: -150px;
-  }
   .food-items .food-item .food-text {
     bottom: -322px;
   }
@@ -813,14 +793,7 @@ div#map {
     padding-top: 30px;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .review-slider.owl-carousel .owl-nav button {
-    left: -30px;
-  }
-  .review-slider.owl-carousel .owl-nav button.owl-next {
-    right: -30px;
-  }
   .food-items {
     margin: 0;
   }
@@ -828,12 +801,11 @@ div#map {
     margin-bottom: 15px;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .review-slider.owl-carousel .owl-nav {
     display: none;
   }
-  .footer-section .copyright-option ul li {
+  .footer-section ul li {
     margin-right: 25px;
   }
   .food-items {
@@ -841,11 +813,5 @@ div#map {
   }
   .food-item {
     margin-bottom: 10px;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  .footer-section .copyright-option ul li {
-    margin-bottom: 5px;
   }
 }
