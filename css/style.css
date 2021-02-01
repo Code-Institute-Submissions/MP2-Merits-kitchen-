@@ -688,20 +688,6 @@ div#map {
     span {
     color: #dfa974;
   }
-  .offcanvas-menu-wrapper .top-social {
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-  .offcanvas-menu-wrapper .top-social a {
-    display: inline-block;
-    font-size: 16px;
-    color: #19191a;
-    margin-right: 20px;
-  }
-  .offcanvas-menu-wrapper .top-social a:last-child {
-    margin-right: 0;
-  }
   .offcanvas-menu-wrapper .top-widget li {
     list-style: none;
     font-size: 16px;
