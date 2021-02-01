@@ -1,16 +1,25 @@
 "use strict";
-
 (function ($) {
-  $(window).on("load", function () {
-    $(".loader").fadeOut();
-    $("#preloder").delay(200).fadeOut("slow");
-  });
-
-  $(".set-bg").each(function () {
+  // Set background image for main image
+  $(".hs-item.set-bg").each(function () {
     var bg = $(this).data("setbg");
     $(this).css("background-image", "url(" + bg + ")");
   });
+  // Mobile Menu Open
+  $(".canvas-open").on("click", function () {
+    $(".offcanvas-menu-wrapper").addClass("show-offcanvas-menu-wrapper");
+    $(".offcanvas-menu-overlay").addClass("active");
+  });
 
+  $(".canvas-close, .offcanvas-menu-overlay").on("click", function () {
+    $(".offcanvas-menu-wrapper").removeClass("show-offcanvas-menu-wrapper");
+    $(".offcanvas-menu-overlay").removeClass("active");
+  });
+  $(".mobile-menu").slicknav({
+    prependTo: "#mobile-menu-wrap",
+    allowParentLinks: true,
+  });
+  // Food slider carousel
   $(".food-slider").owlCarousel({
     loop: true,
     margin: 0,
@@ -23,6 +32,7 @@
     autoplay: true,
     mouseDrag: false,
   });
+  // Review slider carousel
   $(".review-slider").owlCarousel({
     items: 1,
     dots: false,
@@ -30,10 +40,10 @@
     loop: true,
     smartSpeed: 1200,
     nav: true,
-    navText: ["<i class='arrow_left'></i>", "<i class='arrow_right'></i>"],
   });
 })(jQuery);
 
+// Products array for order
 var Products = [
   {
     id: 1,
@@ -121,7 +131,6 @@ function DisplayProducts() {
 }
 
 function AddToCart(ItemId) {
-  debugger;
   var Product = Products.find((x) => x.id === ItemId);
   CartsProducts.push(Product);
   TotalCartAmount += Number(Product.price.split(" ")[1]);
