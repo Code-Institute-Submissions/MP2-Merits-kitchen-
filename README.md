@@ -10,7 +10,7 @@ The website is created with the purpose to advertise and inform community in Ama
 
 ![Merit's kitchen mockup](wireframes/mock-up.png)
 
-As a customer I want to see the menu and prices of what Merit's kitchen offers. I want to see what the final product looks that I can get in Merit's kitchen. Delicious food pictures help me to feel hungry and motivates me to order food for my dinner.
+As a customer I want to see the menu and prices of what Merit's kitchen offers. I want to see what the final product looks. Delicious food pictures help me to feel hungry and motivates me to order food for my dinner.
 
 Website consists of 4 sections:
 
@@ -30,51 +30,100 @@ Wireframes are available here:
 
 ### Existing Features
 
-Navbar on top helps user to navigate through the website. Logo in left corner always brings user back to Landing page. On the medium and small size user can open navbar from burger icon on right top of the website.
+Navbar on top helps user to navigate through the website. Logo in the left corner always brings the user back to the Landing page. On the medium and small sizes user can open navbar from the burger icon on the right top of the website.
 Footer section follows through all sections and sizes. Footer section consists of contact information, social media links and option to subscribe for newsletters.
 
 ### Landing page
 
-As a user you can see delicious food images to give first impression to user that this website is about food.
-Below you can see best sellers or seasonal dishes, welocimg button to make order. and testimonials form other customers.
-Pressing the Order Now the user is able to open food menu section and make order.
-
-When i hover over the images I can see the name of the dish and price. These images is part of total menu. Images in food section are usually choosed by season or by popuarity, like Best sellers.
-As a user i have a chance to go directly to fool menu page, using big button welcoming me to make order.
-Lower below i can read customer reviews about Merit's kitchen, which for me, as a user, works as a good motivation to try it out too.
+As a user you can see delicious food images to get the first impression that this website is about food.
+Below you can see best sellers or seasonal dishes and welcoming button to make order. Pressing the Order Now the user is able to open the food menu section and make order.
+Lower below i can read testimonials from other customers which, for a user, works as a good motivation to try this service too.
 
 ### How it works
 
-As a user you can read more about Merit, her idea behind this business and what is the final product she is offering.
-
-As a user I want to know more information about the Merit's kitchen. Pressing How it works in navbar, pops up modal with information about Merit and her bussines idea behind this. As Merit's kitchen is made mostly for people in one commune, many users will be familiar with Merit and her business.
+As a user you can read information about Merit Thomsen, her idea behind this business and what is the service she is offering.
 
 ### Order from menu
 
-As a user you can see food menu with delicious food images, information about the dishes and price.
-In the bottom part of the page as a user you can fill in order information and proceed with order.
-
-When I open next section, as a user I can see Food menu, but no more info. To interact there is tooltip next to headline to make me go there to read more information. Tooltip informs me to hover over the food image to get more info and to do order. The same feature was wit food images in landing page. As a user i intuivity could feel that i need to hover over the image. This feature gives me option to read more about dish, see the price and add it to my shopping cart.
-
-In lower par
+As a user you are able to see food menu with delicious food images, information about the dishes and price.
+In the bottom part of the page, user can fill in order information and proceed with order.
 
 ### Contact me
 
+In this section user is able to contact Merit Thomsen, by filling the contact form.
+User can see basic contact information and google map, which shows the business location.
+
 ### Features left to implement
+
+- In Landing page I would like to add a sidebar with the latest news from Merit's kitchen. Like special offer, working hour changes or simply a place where Merit can interact with her customers.
+- In the Footer section I would like to implement an option to receive customer email addresses, when they enter their email addresses and press subscribe for newsletters.
+- I would like to link social media links to real Merit's kitchen profile. As the business is not real for now, links open general social media pages.
+- In the Order from menu section I would like to implement an option to add discount code before the customer proceeds with payment. In case there is a special offer, customers use the code.
+- In the food menu I would like to add an option to read about ingredients of the dish.
 
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-- Bootstrap 4.5.2 (https://getbootstrap.com/)
-  - Bootstrap was used as it was a convenient solution for several objects in my website.
+- [Bootstrap 4.5.2](https://getbootstrap.com/)
+- [jQuery](https://jquery.com/)
+- [jQuery UI](https://jqueryui.com/)
+- Google maps API
+- [EmailJS](https://www.emailjs.com/)
+- [PayPal Developer](https://developer.paypal.com/classic-home)
 
 ## References
 
+- Code institute video projects
+- [W3scools.com](https://www.w3schools.com/)
+- [Stackoverflow](https://stackoverflow.com/)
+- [CSS tricks](https://css-tricks.com)
+
 ## Testing
 
+For testing code validity i used:
+
+- [W3C Markup Validation](https://validator.w3.org/)
+- [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+- [Jshint](https://jshint.com/)
+
+During the tests the user story was achieved, advertising the business by providing the user with information about the business, product and price.
+
+1. Landing page
+
+Go to website https://dinapapsujevica.github.io/MP2-Merits-kitchen-/
+Try to navigate through navbar on top. All sections opens smoothly, emphasizing the active section with underline.
+In medium and small sizes mobile navbar is available from hamburger icon in right top corner.
+Try to hover over the smaller size images I can see the name of the dish and price. These images are part of food menu in next section. Bigger carousel images working only as background images to give total mood of the page.  
+Try to press big welcoming Order now button, which takes me directly to Food menu section.
+Testimonials slides in slow carousel to give chance to read previous customer reviews.
+
+2. How it works
+
+Try to press How it works on navbar to open modal with extra information about the business owner Merit Thomsen and business idea itself.
+Modal can close with visible Close button in right bottom corner of modal or clicking somewhere outside the modal.
+
+3. Order from menu
+
+Try to press section on navbar Order from menu to open Food menu page. Next to headline there is emphasized tooltip (questionmark) icon to navigate me how to use Menu bellow. Following the tooltip I hover over the food image to read more about it, to see price as well as Order button let me add item to shopping cart.
+Bellow the food menu I can see form where I can fill in to start my order, add food items and see my total sum for the order. Try to press Checkout button to proceed with payment and open paypal or creditcard payment option.
+
+4. Contact me
+
+Try to press Contact me section to open contact form to send message to Merit's email. To send message I need to fill all fields and after pressing Send Message, opens modal to inform me that message is sent.
+I can also see Contact information and location about the business. Location is shown in google maps and marked with clusstermark.
+
+Social media links:
+
+Try to press Social media icons in the footer of each section through the whole website.
+Links will open in a new tab using target="\_blank". All links have been manually tested to ensure that they are linked to the right destination.
+
 ### Fixed bugs
+
+- Slicknav in medium and small sizes
+- linking js path in html
+-
 
 ## Deployment
 
@@ -89,8 +138,19 @@ Source code on GitHub can be found under the link: (https://github.com/DinaPapsu
 
 ### Content
 
+All the content on this website was written by me.
+
 ### Media
 
+- Food images were taken from [Pexels](https://www.pexels.com/).
+
 ### Acknowledgements
+
+- I received inspiration for this project from Code Institute project Rosie
+- Code Institute student support
+- Slack community
+- I received a help in the middle of project from Romans
+- For testing user experience I received help from Ieva Malta
+- Big thanks for support to my mentor Spencer Barriball
 
 Website is created for educational use!
