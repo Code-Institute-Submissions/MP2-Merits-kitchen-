@@ -93,26 +93,27 @@ During the tests the user story was achieved, advertising the business by provid
 1. Landing page
 
 Go to website https://dinapapsujevica.github.io/MP2-Merits-kitchen-/
-Try to navigate through navbar on top. All sections opens smoothly, emphasizing the active section with underline.
-In medium and small sizes mobile navbar is available from hamburger icon in right top corner.
-Try to hover over the smaller size images I can see the name of the dish and price. These images are part of food menu in next section. Bigger carousel images working only as background images to give total mood of the page.  
-Try to press big welcoming Order now button, which takes me directly to Food menu section.
-Testimonials slides in slow carousel to give chance to read previous customer reviews.
+Try to navigate through the navbar on top. All sections opens smoothly, emphasizing the active section with underline.
+Logo in the left top corner always brings me back to landing page.
+In medium and small sizes mobile navbar is available from the hamburger icon in the right top corner.
+Try to hover over the smaller size images to see the name of the dish and price. These images are part of the food menu in the next section. Bigger carousel images working only as background images to give the total mood of the page.  
+Try to press the big welcoming Order now button, which takes me directly to the Food menu section.
+Testimonials slide in a slow carousel to give chance to read previous customer reviews.
 
 2. How it works
 
-Try to press How it works on navbar to open modal with extra information about the business owner Merit Thomsen and business idea itself.
-Modal can close with visible Close button in right bottom corner of modal or clicking somewhere outside the modal.
+Try to press How it works on navbar to open modal Merit's kitchen with extra information about the business owner Merit Thomsen and business idea itself.
+The modal can close with a visible Close button in the right bottom corner of modal or clicking somewhere outside the modal.
 
 3. Order from menu
 
-Try to press section on navbar Order from menu to open Food menu page. Next to headline there is emphasized tooltip (questionmark) icon to navigate me how to use Menu bellow. Following the tooltip I hover over the food image to read more about it, to see price as well as Order button let me add item to shopping cart.
-Bellow the food menu I can see form where I can fill in to start my order, add food items and see my total sum for the order. Try to press Checkout button to proceed with payment and open paypal or creditcard payment option.
+Try to press the section on navbar Order from menu to open food menu page. Next to the headline there is an emphasized tooltip (questionmark) icon to inform me how to use menu below. Following the tooltip, I hover over the food image to read more about it, to see the price. The Add to Cart button let me add items to the shopping cart.
+Below the food menu I can see Order Form where I can fill in to start my order, add food items and see total sum for my order. Try to press the Continue to checkout button to proceed with payment and open paypal or credit card payment option.
 
 4. Contact me
 
-Try to press Contact me section to open contact form to send message to Merit's email. To send message I need to fill all fields and after pressing Send Message, opens modal to inform me that message is sent.
-I can also see Contact information and location about the business. Location is shown in google maps and marked with clusstermark.
+Try to press the Contact me section to open the contact form and send a message to Merit's email. To send a message I need to fill all fields and after pressing Send Message, opens modal to inform me that message is sent.
+I can also see contact info and location about the business. Location is shown in google maps and marked.
 
 Social media links:
 
@@ -123,6 +124,7 @@ Links will open in a new tab using target="\_blank". All links have been manuall
 
 - Slicknav in medium and small sizes
 - linking js path in html
+- implement informative modal in website
 -
 
 ## Deployment
@@ -149,7 +151,7 @@ All the content on this website was written by me.
 - I received inspiration for this project from Code Institute project Rosie
 - Code Institute student support
 - Slack community
-- I received a help in the middle of project from Romans
+- I received a help in the middle of project from Romans Kackans
 - For testing user experience I received help from Ieva Malta
 - Big thanks for support to my mentor Spencer Barriball
 
