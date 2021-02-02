@@ -56,7 +56,7 @@ User can see basic contact information and google map, which shows the business 
 
 ### Features left to implement
 
-- I would like to change How it works modal to About section as as seperate page and add a sidebar with the latest news from Merit's kitchen. Like special offer, working hour changes or simply a place where Merit can interact with her customers. Doing that I will fix the bug with How it works modal for medium and small sizes.
+- I would like to change How it works modal to About section as a separate page and add a sidebar with the latest news from Merit's kitchen. Like special offers, working hour changes or simply a place where Merit can interact with her customers. Doing that I will fix the bug with How it works modal for medium and small sizes.
 - In the Footer section I would like to implement an option to receive customer email addresses, when they enter their email addresses and press subscribe for newsletters.
 - I would like to link social media links to real Merit's kitchen profile. As the business is not real for now, links open general social media pages.
 - In the Order from menu section I would like to implement an option to add discount code before the customer proceeds with payment. In case there is a special offer, customers use the code.
@@ -148,9 +148,9 @@ Links will open in a new tab using target="\_blank". All links have been manuall
 
 The website is hosted usign GitHub and deployed directly from the master branch.
 I started by creating a new repository with `git init`. Then each update was done by the command `git add .` and then committing it to my local repo with the command `git commit -m”message”`. Then I uploaded it to my remote repo (Github) using `git push`.
-In order to deploy website correctly on GitHub, the landing page must be named 'index.html'.
+In order to deploy a website correctly on GitHub, the landing page must be named 'index.html'.
 
-To make live version of the website, I opened my repository and in Settings choosing Source - Branch:master I save it. That made it as website under the link: (https://dinapapsujevica.github.io/MP2-Merits-kitchen-/).  
+To make a live version of the website, I opened my repository and in Settings choosing Source - Branch:master I save it. That made it as website under the link: (https://dinapapsujevica.github.io/MP2-Merits-kitchen-/).  
 Source code on GitHub can be found under the link: (https://github.com/DinaPapsujevica/MP2-Merits-kitchen-.git).
 
 ## Credits
