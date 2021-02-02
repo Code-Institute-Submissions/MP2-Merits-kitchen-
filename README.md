@@ -3,6 +3,7 @@
 Milestone Project 2 - Interactive Front-end
 
 The website is created with the purpose to advertise and inform community in Amager about Merits Thomsen small business - home made food service - Merit's kitchen.
+Go to website https://dinapapsujevica.github.io/MP2-Merits-kitchen-/
 
 ## UX
 
@@ -55,7 +56,7 @@ User can see basic contact information and google map, which shows the business 
 
 ### Features left to implement
 
-- In Landing page I would like to add a sidebar with the latest news from Merit's kitchen. Like special offer, working hour changes or simply a place where Merit can interact with her customers.
+- I would like to change How it works modal to About section as as seperate page and add a sidebar with the latest news from Merit's kitchen. Like special offer, working hour changes or simply a place where Merit can interact with her customers. Doing that I will fix the bug with How it works modal for medium and small sizes.
 - In the Footer section I would like to implement an option to receive customer email addresses, when they enter their email addresses and press subscribe for newsletters.
 - I would like to link social media links to real Merit's kitchen profile. As the business is not real for now, links open general social media pages.
 - In the Order from menu section I would like to implement an option to add discount code before the customer proceeds with payment. In case there is a special offer, customers use the code.
@@ -92,32 +93,49 @@ During the tests the user story was achieved, advertising the business by provid
 
 1. Landing page
 
-Go to website https://dinapapsujevica.github.io/MP2-Merits-kitchen-/
-Try to navigate through the navbar on top. All sections opens smoothly, emphasizing the active section with underline.
+Navbar on top helps user to navigate through the website. Logo in the left corner always brings the user back to the Landing page. On the medium and small sizes user can open navbar from the burger icon on the right top of the website.
+
+To achieve user story try to navigate through the navbar on top. All sections opens smoothly, emphasizing the active section with underline.
 Logo in the left top corner always brings me back to landing page.
 In medium and small sizes mobile navbar is available from the hamburger icon in the right top corner.
-Try to hover over the smaller size images to see the name of the dish and price. These images are part of the food menu in the next section. Bigger carousel images working only as background images to give the total mood of the page.  
+
+As a user you can see delicious food images to get the first impression that this website is about food.
+Below you can see best sellers or seasonal dishes and welcoming button to make order. Pressing the Order Now the user is able to open the food menu section and make order.
+Lower below i can read testimonials from other customers which, for a user, works as a good motivation to try this service too.
+
+To achieve user story try to hover over the smaller size images to see the name of the dish and price. These images are part of the food menu in the next section. Bigger carousel images working only as background images to give the total mood of the page.  
 Try to press the big welcoming Order now button, which takes me directly to the Food menu section.
 Testimonials slide in a slow carousel to give chance to read previous customer reviews.
 
 2. How it works
 
-Try to press How it works on navbar to open modal Merit's kitchen with extra information about the business owner Merit Thomsen and business idea itself.
+As a user you can read information about Merit Thomsen, her idea behind this business and what is the service she is offering.
+
+To achieve user story try to press How it works on navbar to open modal Merit's kitchen with extra information about the business owner Merit Thomsen and business idea itself.
 The modal can close with a visible Close button in the right bottom corner of modal or clicking somewhere outside the modal.
+After testing I can see that website was developed mostly for desktop version, thats is why modal How it works doesn't work properly in medium and small sizes.
 
 3. Order from menu
 
-Try to press the section on navbar Order from menu to open food menu page. Next to the headline there is an emphasized tooltip (questionmark) icon to inform me how to use menu below. Following the tooltip, I hover over the food image to read more about it, to see the price. The Add to Cart button let me add items to the shopping cart.
-Below the food menu I can see Order Form where I can fill in to start my order, add food items and see total sum for my order. Try to press the Continue to checkout button to proceed with payment and open paypal or credit card payment option.
+As a user you are able to see food menu with delicious food images, information about the dishes and price.
+In the bottom part of the page, user can fill in order information and proceed with order.
+
+To achieve usr story try to press the section on navbar Order from menu to open food menu page. Next to the headline there is an emphasized tooltip (questionmark) icon to inform me how to use menu below. Following the tooltip, I hover over the food image to read more about it, to see the price. The Add to Cart button let me add items to the shopping cart.
+Below the food menu there is an Order Form where I can fill in to start my order, add food items and see total sum for my order. Try to press the Continue to checkout button to proceed with payment and open paypal or credit card payment option.
 
 4. Contact me
 
-Try to press the Contact me section to open the contact form and send a message to Merit's email. To send a message I need to fill all fields and after pressing Send Message, opens modal to inform me that message is sent.
+In this section user is able to contact Merit Thomsen, by filling the contact form.
+User can see basic contact information and google map, which shows location of the business.
+
+To achieve user story try to press the Contact me section to open the contact form and send a message to Merit's email. To send a message I need to fill all fields and after pressing Send Message, opens modal to inform me that message is sent.
 I can also see contact info and location about the business. Location is shown in google maps and marked.
 
-Social media links:
+5. Social media links:
 
-Try to press Social media icons in the footer of each section through the whole website.
+Footer section follows through all sections and sizes. Footer section consists of contact information, social media links and option to subscribe for newsletters.
+
+To achieve user story try to press Social media icons in the footer of each section through the whole website.
 Links will open in a new tab using target="\_blank". All links have been manually tested to ensure that they are linked to the right destination.
 
 ### Fixed bugs
@@ -125,15 +143,14 @@ Links will open in a new tab using target="\_blank". All links have been manuall
 - slicknav in medium and small sizes
 - linking js in html
 - implement informative modal in website
-- responsive modal for all screen sizes
 
 ## Deployment
 
 The website is hosted usign GitHub and deployed directly from the master branch.
-All changes in website will be updated automatically once command 'git push' is runned.
+I started by creating a new repository with `git init`. Then each update was done by the command `git add .` and then committing it to my local repo with the command `git commit -m”message”`. Then I uploaded it to my remote repo (Github) using `git push`.
 In order to deploy website correctly on GitHub, the landing page must be named 'index.html'.
 
-Live version of the website can be found under the link: (https://dinapapsujevica.github.io/MP2-Merits-kitchen-/).  
+To make live version of the website, I opened my repository and in Settings choosing Source - Branch:master I save it. That made it as website under the link: (https://dinapapsujevica.github.io/MP2-Merits-kitchen-/).  
 Source code on GitHub can be found under the link: (https://github.com/DinaPapsujevica/MP2-Merits-kitchen-.git).
 
 ## Credits
