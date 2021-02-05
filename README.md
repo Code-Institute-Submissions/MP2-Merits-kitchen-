@@ -61,6 +61,7 @@ User can see basic contact information and google map, which shows the business 
 - I would like to link social media links to real Merit's kitchen profile. As the business is not real for now, links open general social media pages.
 - In the Order from menu section I would like to implement an option to add discount code before the customer proceeds with payment. In case there is a special offer, customers use the code.
 - In the food menu I would like to add an option to read about ingredients of the dish.
+- In shopping cart I would like to add option to delete item from list.
 
 ## Technologies Used
 
@@ -138,19 +139,13 @@ Footer section follows through all sections and sizes. Footer section consists o
 To achieve user story try to press Social media icons in the footer of each section through the whole website.
 Links will open in a new tab using target="\_blank". All links have been manually tested to ensure that they are linked to the right destination.
 
-### Fixed bugs
-
-- slicknav in medium and small sizes
-- linking js in html
-- implement informative modal in website
-
 ## Deployment
 
 The website is hosted usign GitHub and deployed directly from the master branch.
 I started by creating a new repository with `git init`. Then each update was done by the command `git add .` and then committing it to my local repo with the command `git commit -m”message”`. Then I uploaded it to my remote repo (Github) using `git push`.
 In order to deploy a website correctly on GitHub, the landing page must be named 'index.html'.
 
-To make a live version of the website, I opened my repository and in Settings choosing Source - Branch:master I save it. That made it as website under the link: (https://dinapapsujevica.github.io/MP2-Merits-kitchen-/).  
+To make a live version of the website, I open my repository, in Settings choose Source - Branch:master and save it. That made it as website under the link: (https://dinapapsujevica.github.io/MP2-Merits-kitchen-/).  
 Source code on GitHub can be found under the link: (https://github.com/DinaPapsujevica/MP2-Merits-kitchen-.git).
 
 ## Credits
@@ -168,7 +163,7 @@ All the content on this website was written by me.
 - I received inspiration for this project from Code Institute project Rosie
 - Code Institute student support
 - Slack community
-- I received a help in the middle of project from Romans Kackans
+- I received a help in the middle of project from Romans Kackans and Slavia Furtado
 - For testing user experience I received help from Ieva Malta
 - Big thanks for support to my mentor Spencer Barriball
 

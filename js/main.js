@@ -5,6 +5,7 @@
     var bg = $(this).data("setbg");
     $(this).css("background-image", "url(" + bg + ")");
   });
+
   // Mobile Menu Open
   $(".canvas-open").on("click", function () {
     $(".offcanvas-menu-wrapper").addClass("show-offcanvas-menu-wrapper");
@@ -19,6 +20,7 @@
     prependTo: "#mobile-menu-wrap",
     allowParentLinks: true,
   });
+
   // Food slider carousel
   $(".food-slider").owlCarousel({
     loop: true,
@@ -32,6 +34,7 @@
     autoplay: true,
     mouseDrag: false,
   });
+
   // Review slider carousel
   $(".review-slider").owlCarousel({
     items: 1,
